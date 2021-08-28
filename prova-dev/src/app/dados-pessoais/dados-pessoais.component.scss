@@ -1,0 +1,63 @@
+body{
+  font-family:courier,arial,helvetica;
+}
+.contain{
+  border-style: solid;
+  border-color: coral;
+  margin: 5% 8% 5% 8%;
+  padding-bottom: 4%;
+}
+.title{
+  color: coral;
+  margin: 2%;
+}
+.contain .input{
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid Silver;
+  outline: none;
+  margin-top: -1%;
+  margin-left: 2%;
+  width: 95%;
+}
+.contain .input:focus{
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid coral;
+  outline: none;
+
+}
+.texto{
+  margin: 1% 0 1% 10%;
+  font-family:arial;
+  color: Gray;
+  font-size: 11pt;
+  width: 300px;
+}
+.pt-1{
+  display: inline-block;
+  width: 49%;
+}
+.pt-1 .input{
+  margin-left: 5%;
+}
+.bt-org{
+  margin-right: 5%;
+  margin-top: 2%;
+  padding-right: 5%;
+  position: relative;
+}
+button{
+  float: right;
+  width: 30%;
+  background-color: Silver;
+}
+button:hover{
+  float: right;
+  width: 30%;
+  background-color: LightGrey;
+  border: solid 1px DimGray;
+}
+
