@@ -6,7 +6,7 @@ import { DadosPessoaisComponent } from './dados-pessoais/dados-pessoais.componen
 
 const routes: Routes = [
   { path: 'cadastro', component: cadastroComponent },
-  { path: 'DadosPessoais', component: DadosPessoaisComponent},
+  { path: 'dadospessoais', component: DadosPessoaisComponent},
   { path: 'finalizar', component: FinalizarComponent},
   { path: '', redirectTo: 'cadastro', pathMatch:'full' }
 ];
