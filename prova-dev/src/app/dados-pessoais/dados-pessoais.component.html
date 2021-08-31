@@ -2,7 +2,7 @@
   <div class="title">
     <h2>Me fale mais sobre você.</h2>
   </div>
-  <form [formGroup]="cadastroForm" (submit)="enviocadastro">
+  <form [action]="cadastroForm" (submit)="enviocadastro">
     <div>
       <label for="str_dtnsc">
         <p class="texto">data de nascimento</p>
@@ -23,9 +23,9 @@
       </label>
       <input class="input" type="text" formControlName="profissao" id="str_profissao" />
     </div>
-    <a routerLink='cadastro'><-voltar</a>
+    <a routerLink=''><-voltar</a>
     <div class="bt-org">
-      <button type="button" class="btn btn-light">Finalizar</button>
+      <button type="button" class="btn btn-light" [routerLink]="'../finalizar'">Finalizar</button>
     </div>
   </form>
 </div>

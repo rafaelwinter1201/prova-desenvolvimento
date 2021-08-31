@@ -1,6 +1,9 @@
-import { FormGroup, FormBuilder } from '@angular/forms';
-import { Component, OnInit } from '@angular/core';
-import { Cadastro } from '../models/cadastro';
+
+import { Component } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+
+
+
 
 @Component({
   selector: 'app-cadastro',
@@ -8,39 +11,15 @@ import { Cadastro } from '../models/cadastro';
   styleUrls: ['./cadastro.component.scss']
 })
 
-export class cadastroComponent implements OnInit {
+export class cadastroComponent {
 
-  public cadastroForm!: FormGroup;
-  public enviodado!: Cadastro;
-  public cadastra!: Cadastro;
+    nome!: string;
+    email!: string;
 
-
-  public cadastros = [
-    {nome: 'rafael', email:'rafael@gmail', cpf:'32563258966', renda:'200$'},
-    {nome: 'douglas', email:'douglas@gmail', cpf:'32587412369', renda:'300$'},
-    {nome: 'eduardo', email:'eduardo@gmail', cpf:'12365896512', renda:'400$'},
-  ];
-
-  enviocadastro(cadastra: Cadastro){
-    console.log(this.cadastroForm);
+  onSubmit() {
+    // TODO: Use EventEmitter with form value
+    console.log('this.profileForm.value');
   }
-
-  constructor(private fb: FormBuilder){
-    this.criaForm();
-  }
-
-  criaForm(){
-    this.cadastroForm = this.fb.group({
-      nome: [''],
-      email: [''],
-      cpf: [''],
-      renda: [''],
-    })
-  }
-
-  ngOnInit(): void {
-    throw new Error('Method not implemented.');
-  }
-
 }
+
 

@@ -1,8 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\prova-dev-API"
+    "\\prova-dev-API",
+    "\\prova-dev-API\\Data",
+    "\\prova-dev-API\\Models"
   ],
-  "SelectedNode": "\\prova-dev-API\\Program.cs",
+  "SelectedNode": "\\prova-dev-API\\Data\\DataContent.cs",
   "PreviewInSolutionExplorer": false
 }

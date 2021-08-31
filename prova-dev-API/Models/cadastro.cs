@@ -1,17 +1,16 @@
 
 
 using System;
+using System.ComponentModel.DataAnnotations;
 
 namespace prova_dev_API.Models
 {
     public class cadastro
     {
-        public cadastro(string nome)
+        public cadastro() {   }
+        public cadastro(int Id, string nome, string email, int cpf, string renda, string dtnasc, string celular, string profissao)
         {
-            this.nome = nome;
-        }
-        public cadastro(string nome, string email, int cpf, string renda, string dtnasc, string celular, string profissao)
-        {
+            this.Id = Id;
             this.nome = nome;
             this.email = email;
             this.cpf = cpf;
@@ -21,7 +20,8 @@ namespace prova_dev_API.Models
             this.profissao = profissao;
 
         }
-        private string nome { get; set; }
+        [Key] public int Id { get; set; }
+        public string nome { get; set; }
         public string email { get; set; }
         public int cpf { get; set; }
         public string renda { get; set; }
